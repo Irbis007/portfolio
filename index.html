@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/loader.css"> 
+   <style>
+        body {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-switcher.css">
+
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css"> 
+</head>
+<body>
+    <div id="preloader">
+        <div id="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+       
+    </div>
+
+    <script>
+        document.body.onload = () => {
+            setTimeout(function() {
+                const preloader = document.getElementById('preloader');
+                if(!preloader.classList.contains('done')) {
+                    preloader.classList.add('done')
+                }
+            }, 1000)
+        }
+    </script>
+
+    <div id="root">
+        <!-- ==== aside start ==== -->
+        <aside class="aside">
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+           
+                <div class="aside-profile">
+                    <div class="profile-avatar"><img src="https://www.upwork.com/profile-portraits/c1Yk1-ROhv98XodLWple9boSrn04n8gf0VMs3SVwRVq-ZQFjhhJY3Ugsl_TOBdSjR6" alt="avatar"></div>
+                    <div class="profile-name">Konstantin Shushkodomov</div>
+                    <div class="profile-descr">Front-end developer I will do my job as quickly and efficiently as possible. More than two years experience</div>
+                </div>
+       
+               
+         
+
+
+            <div class="aside-menu">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#home" class="menu-link active">Home</a></li>
+                        <li class="menu-item"><a href="#services" class="menu-link">Knowledge</a></li>
+                        <li class="menu-item"><a href="#about" class="menu-link">About me</a></li>
+                        <li class="menu-item"><a href="#portfolio" class="menu-link">Portfolio</a></li>
+                        <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="aside-footer">
+                    <div class="style-switcher">
+                        <div class="skins-bg skins-bg-toggler">
+                            <div class="skin-bg-item">
+                                <a href="#"><img src="image/skins-bg-item/background-1.jpg" alt=""></a>
+                            </div>
+                            <div class="skin-bg-item">
+                                <a href="#"><img src="image/skins-bg-item/background-2.jpg" alt=""></a>
+                            </div>
+                            <div class="skin-bg-item">
+                                <a href="#"><img src="image/skins-bg-item/background-3.jpg" alt=""></a>
+                            </div>
+                            <div class="skin-bg-item">
+                                <a href="#"><img src="image/skins-bg-item/background-4.jpg" alt=""></a>
+                            </div>
+            
+                        </div>
+                       
+                        <div class="colors">
+                            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </aside>
+        <!-- ==== aside end ==== -->
+
+        <main class="main-content">
+            <!-- ==== home start ==== -->
+            <section class="home section active" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Konstantin Shushkodomov</span></h3>
+                            <h3 class="my-profession">I' m a <span class="typing">front-end developer</span></h3>
+                            <p class="first-descr">front-end developer?</p>
+                            <p>A front-end developer builds the visual and interactive parts of websites using HTML, CSS, and JavaScript. They ensure responsiveness and optimize for performance across devices. Their focus is on creating a smooth, engaging user experience.
+
+                               <div>At the end of a front-end developer’s work, a functional, interactive, and visually appealing website or application is delivered. It is responsive, working seamlessly across different devices and screen sizes. The site is optimized for performance, ensuring fast loading times. All interactive features, like buttons, forms, and animations, function smoothly. The final product provides users with a consistent and engaging experience.</div>
+                            <!-- <a href="#" class="button">Download CV</a> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+              <!-- ==== home end ==== -->
+
+              <!-- ==== Service start -->
+              <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 class="title">Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ==== sevice  item ==== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon"><i class="fa fa-mobile-alt"></i></div>
+                                <h4>Mobile applications</h4>
+                                <p>Development of mobile applications and other web products of any complexity.
+                                    
+                            </div>
+                        </div>
+                        <!-- ==== /sevice  item ==== -->
+                        <!-- ==== sevice  item ==== -->
+                        <div class="service-item padd-15">
+                           <div class="service-item-inner">
+                               <div class="icon"><i class="fa fa-laptop-code"></i></div>
+                               <h4>Site adaptation.</h4>
+                               <p>We create turnkey websites for online or offline business. We form a selling structure with high conversion.</p>
+                           </div>
+                       </div>
+                       <!-- ==== /sevice  item ==== -->
+                       <!-- ==== sevice  item ==== -->
+                       <div class="service-item padd-15">
+                           <div class="service-item-inner">
+                               <div class="icon"><i class="fa fa-palette"></i></div>
+                               <h4>Web design</h4>
+                               <p>We create turnkey websites for online or offline business. We form a selling structure with high conversion.</p>
+                           </div>
+                       </div>
+                       <!-- ==== /sevice  item ==== -->
+                       <!-- ==== sevice  item ==== -->
+                       <div class="service-item padd-15">
+                           <div class="service-item-inner">
+                               <div class="icon"><i class="fa fa-code"></i></div>
+                               <h4>landing</h4>
+                               <p>We will set up your website for hosting. we will register a domain and launch your website on the Internetcrawled. On all types of search sources.</p>
+                           </div>
+                       </div>
+                       <!-- ==== /sevice  item ==== -->
+                       <!-- ==== sevice  item ==== -->
+                       <div class="service-item padd-15">
+                           <div class="service-item-inner">
+                               <div class="icon"><i class="fa fa-search"></i></div>
+                               <h4>Search</h4>
+                               <p>We will make your site available to search engines..<br><br><br></p>
+                           </div>
+                       </div>
+                       <!-- ==== /sevice  item ==== -->
+                       <!-- ==== sevice  item ==== -->
+                       <div class="service-item padd-15">
+                           <div class="service-item-inner">
+                               <div class="icon"><i class="fa fa-bullhorn"></i></div>
+                               <h4>voice search optimization</h4>
+                               <p>Companies with sites that are not optimized for voice search miss out on customers who literally “go into hands”. <br> <br></p>
+                           </div>
+                       </div>
+                       <!-- ==== /sevice  item ==== -->
+                    </div> 
+                </div>
+            </section>
+              <!-- ==== Service end -->
+
+              <!-- ==== About start ==== -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="title">
+                            About me
+                        </h2>
+                        <div class="row">
+                            <div class="about-content padd-15">
+                                <div class="row">
+                                    <div class="about-text padd-15">
+                                        <h3>I'm Konstantin Shushkodomov and <span>Front-end developer</span></h3>
+                                        <p>
+                                           I am skilled in HTML, CSS, JavaScript, React, and Next.js. They can build responsive, dynamic web applications with a focus on performance and user experience. Their expertise covers both styling and advanced JavaScript frameworks for front-end development.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="personal-info padd-15">
+                                        <div class="row">
+                                            <div class="info-item padd-15">
+                                                <p>Birthday : <span>03 Jun 2005</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Age : <span>19</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Email : <span>kshushkodomov@gmail.com</span></p>
+                                            </div>
+                                        
+                                            <div class="info-item padd-15">
+                                                <p>City : <span>Antalya</span></p>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="row">
+                                            <div class="buttons padd-15">
+                                                <a href="#contact" data-section-index='1' class="button hire-me">hire me</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skills padd-15">
+                                        <div class="row">
+                                            <div class="skill-item padd-15">
+                                                <h5>   CSS</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 91%;"></div>
+                                                    <div class="skill-percent">91%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>HTML</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 96%;"></div>
+                                                    <div class="skill-percent">96%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>ReactJS</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 69%;"></div>
+                                                    <div class="skill-percent">69%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>NextJS</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 66%;"></div>
+                                                    <div class="skill-percent">66%</div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                </div>
+            </section>
+              <!-- ==== About end ==== -->
+
+              <!-- ==== portfolio start ==== -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 class="title">Portfolio</h2>
+                        </div>
+                    </div>
+                   
+
+                    <!-- <div class="row padd-15">
+                        <div class="portfolio-nav">
+                            <ul class="portfolio-nav-list">
+                                <li class="portfolio-nav-item"><a href="#" class="'portfolio-nav-link active">Design</a></li>
+                                <li class="portfolio-nav-item"><a href="#" class="'portfolio-nav-link">Layout</a></li>
+                                <li class="portfolio-nav-item"><a href="#" class="'portfolio-nav-link">Mobile Design</a></li>
+                                <li class="portfolio-nav-item"><a href="#" class="'portfolio-nav-link">Logos</a></li>
+                                <li class="portfolio-nav-item"><a href="#" class="'portfolio-nav-link">NFT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     -->
+                    <div class="row">
+                        <div class="portfolio-list">
+                            <!-- ==== portfolio item start ==== -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="image/portfolio/portfolio-item-1.png" alt="porfolio">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==== end portfolio item ==== -->
+                           <!-- ==== portfolio item start ==== -->
+                           <div class="portfolio-item padd-15">
+                               <div class="portfolio-item-inner shadow-dark">
+                                   <div class="portfolio-img">
+                                       <img src="image/portfolio/portfolio-item-1.png" alt="porfolio">
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- ==== portfolio item end ==== -->
+                              <!-- ==== portfolio item start ==== -->
+                        <div class="portfolio-item padd-15">
+                           <div class="portfolio-item-inner shadow-dark">
+                               <div class="portfolio-img">
+                                   <img src="image/portfolio/portfolio-item-1.png" alt="porfolio">
+                               </div>
+                           </div>
+                       </div>
+                       <!-- ==== portfolio item end ==== -->
+                          <!-- ==== portfolio item start ==== -->
+                          <div class="portfolio-item padd-15">
+                           <div class="portfolio-item-inner shadow-dark">
+                               <div class="portfolio-img">
+                                   <img src="image/portfolio/portfolio-item-1.png" alt="porfolio">
+                               </div>
+                           </div>
+                       </div>
+                       <!-- ==== portfolio item end ==== -->
+                          <!-- ==== portfolio item start ==== -->
+                          <div class="portfolio-item padd-15">
+                           <div class="portfolio-item-inner shadow-dark">
+                               <div class="portfolio-img">
+                                   <img src="image/portfolio/portfolio-item-1.png" alt="porfolio">
+                               </div>
+                           </div>
+                       </div>
+                       <!-- ==== portfolio item end ==== -->
+                          <!-- ==== portfolio item start ==== -->
+                          <div class="portfolio-item padd-15">
+                           <div class="portfolio-item-inner shadow-dark">
+                               <div class="portfolio-img">
+                                   <img src="image/portfolio/portfolio-item-1.png" alt="porfolio">
+                               </div>
+                           </div>
+                       </div>
+                       <!-- ==== portfolio item end ==== -->
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <!-- ==== portfolio end ==== -->
+
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Question?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                       <!-- ==== /contact info item ==== -->
+                        <!-- ==== contact info item ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>kshushkodomov@gmail.com</p>
+                        </div>
+                        <!-- ==== /contact info item ==== -->
+                        <!-- ==== contact info item ==== -->
+                        <div class="contact-info-item padd-15">
+                           <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                           <h4>Office</h4>
+                           <p>turkey</p>
+                       </div>
+
+                       <!-- ==== /contact info item ==== -->
+                    </div>
+                  
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- ==== Script start ==== -->
+    
+    <script src="js/index.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <!-- ==== Script end==== -->
+</body>
+</html>
