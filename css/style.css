@@ -609,9 +609,19 @@ h3.my-profession {
     flex: 0 0 33.33%;
     min-width: 33.33%;
     margin-bottom: 30px;
+    height: 250px;
+    filter: brightness(60%);
+    transition: transform, filter, .3s;
+}
+
+.portfolio .portfolio-item:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
+    z-index: 100;
 }
 
 .portfolio .portfolio-item-inner {
+    height: 100%;
     border: 6px solid var(--skin-color);
     border-radius: 10px;
     overflow: hidden;
@@ -620,8 +630,10 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
+    height: 250px;
     display: block;
 }
+
 
 .portfolio .portfolio-nav {
     margin-bottom: 30px;
@@ -630,7 +642,7 @@ h3.my-profession {
 
 /* ===== portfolio end ===== */
 
-.aside .nav-toggler {
+ .nav-toggler {
     height: 40px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
@@ -644,9 +656,10 @@ h3.my-profession {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    z-index: 100;
 }
 
-.aside .nav-toggler span {
+ .nav-toggler span {
     height: 2px;
     width: 18px;
     background: var(--skin-color);
@@ -654,11 +667,11 @@ h3.my-profession {
     position: relative;
 }
 
-.aside .nav-toggler.open span {
+ .nav-toggler.open span {
     background-color: transparent;
 }
 
-.aside .nav-toggler span::before {
+ .nav-toggler span::before {
     content: '';
     height: 2px;
     width: 18px;
@@ -668,14 +681,14 @@ h3.my-profession {
     left: 0;
 }
 
-.aside .nav-toggler.open span::before {
+ .nav-toggler.open span::before {
     transform: rotate(45deg);
     top: 0;
 }
 
 
 
-.aside .nav-toggler span::after {
+ .nav-toggler span::after {
     content: '';
     height: 2px;
     width: 18px;
@@ -685,7 +698,7 @@ h3.my-profession {
     left: 0;
 }
 
-.aside .nav-toggler.open span::after {
+ .nav-toggler.open span::after {
     transform: rotate(-45deg);
     top: 0;
 }
@@ -798,13 +811,14 @@ h3.my-profession {
         left: -300px;
     }
     .aside.open {
+        position: fixed;
         left: 0;
     }
-    .aside .nav-toggler {
+    .nav-toggler {
         display: flex;
         left: 30px;
     }
-    .aside .nav-toggler.open {
+    .nav-toggler.open {
         left: 235px;
     }
     .section {
